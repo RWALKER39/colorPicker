@@ -1,1 +1,40 @@
-<h1>Welcome to Ricky's Color Picker Page</h1>
+<!doctype html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Color Picker</title>
+    <h1>Welcome to Ricky's Color Picker Page</h1>
+  </head>
+  
+  <body>
+  
+    <h2>Select your color:</h2>
+    <br>
+    
+    <div style="text-align: center">
+        <input type="text" id="hex">
+        <input type="color" id="color">
+        
+        <h3>This is the current color selected</h3>
+        
+        <script>
+          
+          let colorInput = document.querySelector('#color')
+          let hexInput = ddocument.querySelector('#color')
+          
+          colorInput.addEventListener('input', () =>{
+          
+          let color = colorInput.value;
+          hexInput.value = color;
+          document.querySelector('h3').style.color = color;
+          
+          });
+        </script>
+        
+    </div>
+  
+    <h4>Thanks for visiting</h4>
+  </body>
+</html>
